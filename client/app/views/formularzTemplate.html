@@ -1,0 +1,77 @@
+<form action="" method="post" class="bootstrap-frm">
+  <h1>XV Ogólnopolskie Zawody Makiet Szybowców RC</h1>
+  <h2>Formularz zgłoszeniowy uczstnika XV Ogólnopolskich Zawodów Makiet Szybowców RC</h2>
+
+  <label>
+    <span>Imię i nazwisko :</span>
+    <input id="name" type="text" name="name" placeholder="Imię i nazwisko zawodnika" />
+  </label>
+  <label>
+    <span>e-mail :</span>
+    <input id="email" type="email" name="email" placeholder="E-mail kontaktowy" />
+  </label>
+  <label>
+    <span>Klub :</span>
+    <input id="club" type="text" name="club" placeholder="Klub zawodnika" />
+  </label>
+  <label>
+    <span>Model :</span>
+    <input id="model" type="text" name="model" placeholder="Nazwa modelu" />
+  </label>
+  <label>
+    <span>Rozpiętość :</span>
+    <input id="width" type="text" name="width" placeholder="Rozpiętość modelu" />
+  </label>
+  <label>
+    <span>Waga :</span>
+    <input id="weight" type="text" name="weight" placeholder="Waga modelu" />
+  </label>
+  <label>
+    <span>Częstotliwość aparatury :</span>
+    <input id="frequency" type="text" name="frequency" placeholder="Częstotliwość" />
+  </label>
+  <label>
+    <span>Dłuższa wiadomość :</span>
+    <textarea required id="message" name="message" placeholder="Jakaś dłuższa wiadomość tutaj" ></textarea>
+  </label>
+  <label>
+    <span>Wybór :</span>
+    <select name="selection">
+      <option value="1">Opcja nr 1</option>
+      <option value="2">Opcja nr 2</option>
+      <option value="3">Opcja nr 3</option>
+    </select>
+  </label>
+  <label>
+    <span>&nbsp;</span>
+    <input type="button" class="button" value="Wyślij" onsubmit="success.html"/>
+  </label>
+
+</form>
+
+<h3>Lista zgłoszonych uczestników</h3>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Lp.</th>
+    <th>Imię i nazwisko</th>
+    <th>Klub</th>
+    <th>Model</th>
+    <th>Rozpiętość</th>
+    <th>Waga</th>
+    <th>Częstotliwość</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="result in formData">
+    <td>result.id</td>
+    <td>result.field1</td>
+    <td>result.field2</td>
+    <td>result.field3</td>
+    <td>result.field4</td>
+    <td>result.field5</td>
+    <td>result.field6</td>
+  </tr>
+  </tbody>
+</table>

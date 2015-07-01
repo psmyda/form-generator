@@ -1,0 +1,14 @@
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\formsGeneratorWS.dll.config
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\formsGeneratorWS.dll
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\formsGeneratorWS.pdb
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\EntityFramework.dll
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\EntityFramework.SqlServer.dll
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\Nancy.dll
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\Nancy.Hosting.Aspnet.dll
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\EntityFramework.xml
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\EntityFramework.SqlServer.xml
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\Nancy.xml
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\bin\Nancy.Hosting.Aspnet.xml
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\obj\Debug\formsGeneratorWS.dll
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\obj\Debug\formsGeneratorWS.pdb
+c:\Repositories\form-generator\WebService\formsGeneratorWS\formsGeneratorWS\obj\Debug\formsGeneratorWS.csprojResolveAssemblyReference.cache
