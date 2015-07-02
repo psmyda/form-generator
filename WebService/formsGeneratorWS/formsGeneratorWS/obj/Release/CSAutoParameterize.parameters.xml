@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="FormGeneratorDBContext-Web.config Connection String" description="FormGeneratorDBContext Connection String used in web.config by the application to access the database." defaultValue="Server=PSM-DELL\MSSQL2012;Database=smdSoft_db;User ID=formGenerator;Password=smdSoft.2015" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="c:\\Repositories\\form-generator\\WebService\\formsGeneratorWS\\formsGeneratorWS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FormGeneratorDBContext']/@connectionString" />
+  </parameter>
+</parameters>

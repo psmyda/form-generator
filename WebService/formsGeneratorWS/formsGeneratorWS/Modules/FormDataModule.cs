@@ -1,5 +1,7 @@
-﻿using formsGeneratorWS.Data.Repositories;
+﻿using formsGeneratorWS.Data.Models;
+using formsGeneratorWS.Data.Repositories;
 using Nancy;
+using Nancy.ModelBinding;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +20,15 @@ namespace formsGeneratorWS.Modules
                     int id = parameters.id;
 
                     return Response.AsJson<object>(_repo.getAllSubmissionsById(id));
+                };
+
+            Post["/"] = parameters =>
+                {
+                    FormData model = this.Bind<FormData>();
+
+                    _repo.SaveNewFormData(model);
+
+                    return Response.AsJson(model, HttpStatusCode.OK);
                 };
         }
         

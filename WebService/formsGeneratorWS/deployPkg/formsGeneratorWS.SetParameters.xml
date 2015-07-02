@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="webservice" />
+  <setParameter name="FormGeneratorDBContext-Web.config Connection String" value="Server=PSM-DELL\MSSQL2012;Database=smdSoft_db;User ID=formGenerator;Password=smdSoft.2015" />
+</parameters>
