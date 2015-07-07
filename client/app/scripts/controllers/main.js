@@ -10,11 +10,12 @@
 app
   .controller('MainCtrl', function ($scope, $routeParams, NancyAPI, $sce) {
 
+    $scope.formData = [];
+
       console.log($routeParams.formId);
 
-    var id = $routeParams.formId;
+    var id = 1;
 
-    $scope.formData = [];
 
     NancyAPI.getFormDefinition(id).then(
       function(data) {
@@ -29,19 +30,26 @@ app
     );
 
     $scope.saveFormDataToDb = function (){
-      var dataObject = {
-        id: 0,
-        formId: $routeParams.formId,
-        field1: $scope.formData.field1,
-        field2: $scope.formData.field2,
-        field3: $scope.formData.field3,
-        field4: $scope.formData.field4,
-        field5: $scope.formData.field5,
-        field6: $scope.formData.field6,
-        field7: $scope.formData.field7
-      }
 
-      NancyAPI.saveFormData(dataObject);
+      var dataObject = {
+        Id: 0,
+        FormId: 1,
+        field1: $scope.formNewData.Field1,
+        Field2: $scope.formNewData.Field2,
+        Field3: $scope.formNewData.Field3,
+        Field4: $scope.formNewData.Field4,
+        Field5: $scope.formNewData.Field5,
+        Field6: $scope.formNewData.Field6,
+        Field7: $scope.formNewData.Field7
+      };
+
+      console.log(dataObject);
+
+      NancyAPI.saveFormData(dataObject).then(function(result){
+        console.log("zapisane z id: ");
+        console.log(result.id);
+        $scope.formData.push(result);
+      });
     }
 
 

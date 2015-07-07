@@ -1,3 +1,63 @@
-<div ng-bind-html="safeHtml"></div>
+<div class="header" >
+<h1 class="text-center">XV Ogólnopolskie Zawody Makiet Szybowców RC</h1>
+<h2 class="text-center">Formularz zgłoszeniowy uczestnika</h2>
+  <button type="button" class="btn btn-default" aria-label="Left Align">
+    <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><a href="http://www.orlik.sacz.pl/index.php">Powrót do strony organizatora</a>
+  </button>
 
-{{safeHtml}}
+</div>
+<div class="row">
+<form>
+  <div class="form-group">
+    <label for="field1">Imię i nazwisko zawodnika</label>
+    <input class="form-control" id="field1" type="text" name="field1" ng-model="formNewData.Field1">
+    <label for="field2">E-mail kontaktowy</label>
+    <input class="form-control" id="field2" type="text" name="field2" ng-model="formNewData.Field2">
+    <label for="field3">Klub zawodnika</label>
+    <input class="form-control" id="field3" type="text" name="field3" ng-model="formNewData.Field3">
+    <label for="field4">Nazwa modelu</label>
+    <input class="form-control" id="field4" type="text" name="field4" ng-model="formNewData.Field4">
+    <label for="field5">Rozpiętość modelu</label>
+    <input class="form-control" id="field5" type="text" name="field5" ng-model="formNewData.Field5">
+    <label for="field6">Waga modelu</label>
+    <input class="form-control" id="field6" type="text" name="field6" ng-model="formNewData.Field6">
+    <label for="field7">Częstotliwość</label>
+    <input class="form-control" id="field7" type="text" name="field7" ng-model="formNewData.Field7">
+    <!--<input type="text" name="field8" ng-model="formNewData.field1">Częstotliwość<br/> -->
+<br>
+    <button type="submit" ng-click="saveFormDataToDb()" class="btn btn-primary pull-right col-lg-3">Zapisz się!</button>
+  </div>
+</form>
+</div>
+
+<div class="row">
+<h3>Lista zgłoszonych uczestników</h3>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Lp.</th>
+    <th>Imię i nazwisko</th>
+    <th>Klub</th>
+    <th>Model</th>
+    <th>Rozpiętość</th>
+    <th>Waga</th>
+    <th>Częstotliwość</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="result in formData">
+    <td>{{$index + 1}}</td>
+    <td>{{result.Field1}}</td>
+    <td>{{result.Field3}}</td>
+    <td>{{result.Field4}}</td>
+    <td>{{result.Field5}}</td>
+    <td>{{result.Field6}}</td>
+    <td>{{result.Field7}}</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+
+<!--<div ng-bind-html="safeHtml"></div>-->

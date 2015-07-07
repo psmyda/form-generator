@@ -1,18 +1,27 @@
 <h1>XV Ogólnopolskie Zawody Makiet Szybowców RC</h1>
-  <h2>Formularz zgłoszeniowy uczstnika XV Ogólnopolskich Zawodów Makiet Szybowców RC</h2>
+  <h2>Formularz zgłoszeniowy uczestnika XV Ogólnopolskich Zawodów Makiet Szybowców RC</h2>
 
-<form>
-  <input type="text" name="field1" ng-model="formNewData.field1">Imię i nazwisko zawodnika<br/>
-  <input type="text" name="field2" ng-model="formNewData.field2">E-mail kontaktowy<br/>
-  <input type="text" name="field3" ng-model="formNewData.field3">Klub zawodnika<br/>
-  <input type="text" name="field4" ng-model="formNewData.field4">Nazwa modelu<br/>
-  <input type="text" name="field5" ng-model="formNewData.field5">Rozpiętość modelu<br/>
-  <input type="text" name="field6" ng-model="formNewData.field6">Waga modelu<br/>
-  <input type="text" name="field7" ng-model="formNewData.field7">Częstotliwość<br/>
-  <!--<input type="text" name="field8" ng-model="formNewData.field1">Częstotliwość<br/> -->
-  <button ng-click="saveFormDataToDb()">Zapisz się!</button>
+<ng-form>
+  <div class="form-group">
+    <label for="field1">Imię i nazwisko zawodnika</label>
+    <input class="form-control" id="field1" type="text" name="field1" ng-model="formData.Field1">
+    <label for="field2">E-mail kontaktowy</label>
+    <input class="form-control" id="field2" type="text" name="field2" ng-model="formData.Field2">
+    <label for="field3">Klub zawodnika</label>
+    <input class="form-control" id="field3" type="text" name="field3" ng-model="field3">
+    <label for="field4">Nazwa modelu</label>
+    <input class="form-control" id="field4" type="text" name="field4" ng-model="field4">
+    <label for="field5">Rozpiętość modelu</label>
+    <input class="form-control" id="field5" type="text" name="field5" ng-model="field5">
+    <label for="field6">Waga modelu</label>
+    <input class="form-control" id="field6" type="text" name="field6" ng-model="field6">
+    <label for="field7">Częstotliwość</label>
+    <input class="form-control" id="field7" type="text" name="field7" ng-model="field7">
+    <!--<input type="text" name="field8" ng-model="formNewData.field1">Częstotliwość<br/> -->
 
-</form>
+    <button type="submit" ng-click="saveFormDataToDb()" class="btn btn-primary pull-right col-lg-3">Zapisz się!</button>
+  </div>
+</ng-form>
 
 
 <h3>Lista zgłoszonych uczestników</h3>
@@ -31,7 +40,7 @@
   </thead>
   <tbody>
   <tr ng-repeat="result in formData">
-    <td>{{$index + 1}}</td>
+    <td>1</td>
     <td>{{result.field1}}</td>
     <td>{{result.field3}}</td>
     <td>{{result.field4}}</td>

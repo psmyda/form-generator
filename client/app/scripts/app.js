@@ -20,7 +20,7 @@ var app = angular
 
   app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/:formId', {
+      .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
@@ -34,8 +34,4 @@ var app = angular
         redirectTo: '/'
       });
 
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
   });
