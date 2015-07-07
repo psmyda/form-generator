@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\smdSoft</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/30/2015 21:09:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/30/2015 21:09:26</publishTime>
+    </File>
+    <File Include="bin/formsGeneratorWS.dll">
+      <publishTime>07/06/2015 23:23:47</publishTime>
+    </File>
+    <File Include="bin/Nancy.dll">
+      <publishTime>06/30/2015 06:06:55</publishTime>
+    </File>
+    <File Include="bin/Nancy.Hosting.Aspnet.dll">
+      <publishTime>06/30/2015 06:06:55</publishTime>
+    </File>
+    <File Include="Content/nancy-logo.png">
+      <publishTime>06/30/2015 06:06:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/30/2015 21:09:27</publishTime>
+    </File>
+    <File Include="Views/index.sshtml">
+      <publishTime>06/30/2015 06:06:52</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/06/2015 23:23:47</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

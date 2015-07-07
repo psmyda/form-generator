@@ -16,7 +16,7 @@ app
 
     NancyAPI.getFormDefinition(id).then(
       function(data) {
-        $scope.safeHtml = $sce.trustAsHtml(data.FormHtml);
+        $scope.safeHtml = $sce.trustAsHtml(data.FormCode);
       }
     );
 
@@ -25,6 +25,12 @@ app
         $scope.formData = data;
       }
     );
+
+    $scope.saveFormDataToDb = function (){
+      var newFormData = {
+
+      }
+    }
 
 
   });

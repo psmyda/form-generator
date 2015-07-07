@@ -16,7 +16,7 @@
 
             //repos
 
-            container.Register<IFormRepository, FormRepository>();
+            container.Register<IFormDefinitionRepository, FormDefinitionRepository>();
             container.Register<IFormDataRepository, FormDataRepository>();
             
         }

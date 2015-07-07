@@ -31,20 +31,8 @@
     <input id="frequency" type="text" name="frequency" placeholder="Częstotliwość" />
   </label>
   <label>
-    <span>Dłuższa wiadomość :</span>
-    <textarea required id="message" name="message" placeholder="Jakaś dłuższa wiadomość tutaj" ></textarea>
-  </label>
-  <label>
-    <span>Wybór :</span>
-    <select name="selection">
-      <option value="1">Opcja nr 1</option>
-      <option value="2">Opcja nr 2</option>
-      <option value="3">Opcja nr 3</option>
-    </select>
-  </label>
-  <label>
     <span>&nbsp;</span>
-    <input type="button" class="button" value="Wyślij" onsubmit="success.html"/>
+    <input type="button" class="button" value="Wyślij" onsubmit=""/>
   </label>
 
 </form>
@@ -65,13 +53,13 @@
   </thead>
   <tbody>
   <tr ng-repeat="result in formData">
-    <td>result.id</td>
-    <td>result.field1</td>
-    <td>result.field2</td>
-    <td>result.field3</td>
-    <td>result.field4</td>
-    <td>result.field5</td>
-    <td>result.field6</td>
+    <td>{{$index + 1}}</td>
+    <td>{{result.field1}}</td>
+    <td>{{result.field2}}</td>
+    <td>{{result.field3}}</td>
+    <td>{{result.field4}}</td>
+    <td>{{result.field5}}</td>
+    <td>{{result.field6}}</td>
   </tr>
   </tbody>
 </table>

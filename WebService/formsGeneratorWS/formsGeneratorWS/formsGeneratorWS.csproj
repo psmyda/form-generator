@@ -76,12 +76,13 @@
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Data\FormGeneratorDBContext.cs" />
-    <Compile Include="Data\Models\Form.cs" />
+    <Compile Include="Data\Models\FormDefinition.cs" />
     <Compile Include="Data\Models\FormData.cs" />
+    <Compile Include="Data\Models\User.cs" />
     <Compile Include="Data\Repositories\FormDataRepository.cs" />
-    <Compile Include="Data\Repositories\FormRepository.cs" />
+    <Compile Include="Data\Repositories\FormDefinitionRepository.cs" />
     <Compile Include="Modules\FormDataModule.cs" />
-    <Compile Include="Modules\FormModule.cs" />
+    <Compile Include="Modules\FormDefinitionModule.cs" />
     <Compile Include="Modules\IndexModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,7 +94,9 @@
     <None Include="Properties\PublishProfiles\accuWH.pubxml" />
     <None Include="Properties\PublishProfiles\accuWHnew.pubxml" />
     <None Include="Properties\PublishProfiles\accuWhnew2.pubxml" />
+    <None Include="Properties\PublishProfiles\ws.pubxml" />
     <None Include="Properties\PublishProfiles\ZIP.pubxml" />
+    <None Include="Properties\PublishProfiles\Zip1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

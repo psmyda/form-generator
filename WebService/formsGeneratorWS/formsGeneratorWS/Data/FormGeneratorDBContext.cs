@@ -19,16 +19,20 @@ namespace formsGeneratorWS.Data
             Database.SetInitializer<FormGeneratorDBContext>(null);
         }
 
-        public IDbSet<Form> Form { get; set; }
+        public IDbSet<FormDefinition> FormDefinition { get; set; }
         public IDbSet<FormData> FormData { get; set; }
+        public IDbSet<User> User { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-            builder.Entity<Form>().Property(d => d.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            builder.Entity<Form>().HasKey(d => d.Id);
+            builder.Entity<FormDefinition>().Property(d => d.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            builder.Entity<FormDefinition>().HasKey(d => d.Id);
 
             builder.Entity<FormData>().Property(d => d.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             builder.Entity<FormData>().HasKey(d => d.Id);
+
+            builder.Entity<User>().Property(d => d.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            builder.Entity<User>().HasKey(d => d.Id);
         }
     }
 }

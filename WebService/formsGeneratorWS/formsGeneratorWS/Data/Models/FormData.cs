@@ -41,8 +41,6 @@ namespace formsGeneratorWS.Data.Models
         public string Field30 { get; set; }
         public string Field31 { get; set; }
         public string Field32 { get; set; }
-        public DateTime InsertDate { get; set; }
-        public string Owner { get; set; }
-
+        public DateTime CreatedAt { get; set; }
     }
 }
