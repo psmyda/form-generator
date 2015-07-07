@@ -14,6 +14,8 @@ app
 
     var id = $routeParams.formId;
 
+    $scope.formData = [];
+
     NancyAPI.getFormDefinition(id).then(
       function(data) {
         $scope.safeHtml = $sce.trustAsHtml(data.FormCode);
@@ -27,9 +29,19 @@ app
     );
 
     $scope.saveFormDataToDb = function (){
-      var newFormData = {
-
+      var dataObject = {
+        id: 0,
+        formId: $routeParams.formId,
+        field1: $scope.formData.field1,
+        field2: $scope.formData.field2,
+        field3: $scope.formData.field3,
+        field4: $scope.formData.field4,
+        field5: $scope.formData.field5,
+        field6: $scope.formData.field6,
+        field7: $scope.formData.field7
       }
+
+      NancyAPI.saveFormData(dataObject);
     }
 
 

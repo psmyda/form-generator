@@ -1,7 +1,7 @@
 app.service(
   'NancyAPI', function($timeout, $http) {
 
-    var serviceUrl = 'http://localhost/formsGeneratorWS';
+    var serviceUrl = 'http://smd-soft.com/formGeneratorWS';
 
 
     //form definition API
